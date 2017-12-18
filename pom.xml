@@ -1,0 +1,145 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>lp.eloqua</groupId>
+	<artifactId>EloquaAppCloud</artifactId>
+	<packaging>war</packaging>
+	<version>1.0</version>
+	<name>Eloqua AppCloud</name>
+
+	<build>
+		<finalName>${project.artifactId}</finalName>
+		<plugins>
+			<plugin>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.7.0</version>
+				<configuration>
+					<source>${java.version}</source>
+					<target>${java.version}</target>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+
+	<properties>
+		<java.version>1.8</java.version>
+		<jackson.version>2.9.3</jackson.version>
+		<spring.version>5.0.2.RELEASE</spring.version>
+		<reactiverest.version>1.12</reactiverest.version>
+		<junit.version>4.12</junit.version>
+		<javax_servlet_api.version>4.0.0</javax_servlet_api.version>
+		<javax_servlet_jstl.version>1.2</javax_servlet_jstl.version>
+		<tomcat_jsp_api.version>9.0.1</tomcat_jsp_api.version>
+		<guava.version>23.0</guava.version>
+		<log4j.version>1.2.17</log4j.version>
+		<h2.version>1.4.196</h2.version>
+		<apache_commons.version>1.11</apache_commons.version>
+		<buildNumber>${maven.build.timestamp}</buildNumber>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
+
+	<repositories>
+		<repository>
+			<id>jcenter</id>
+			<url>http://dl.bintray.com/lucapompei/maven</url>
+		</repository>
+	</repositories>
+
+	<dependencies>
+		<!-- Spring dependencies -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-core</artifactId>
+			<version>${spring.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-web</artifactId>
+			<version>${spring.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-webmvc</artifactId>
+			<version>${spring.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-context-support</artifactId>
+			<version>${spring.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-jdbc</artifactId>
+			<version>${spring.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-test</artifactId>
+			<version>${spring.version}</version>
+			<scope>test</scope>
+		</dependency>
+		<!-- JUnit dependencies -->
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>${junit.version}</version>
+			<scope>test</scope>
+		</dependency>
+		<!-- HttpServlet dependencies -->
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>javax.servlet-api</artifactId>
+			<version>${javax_servlet_api.version}</version>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>jstl</artifactId>
+			<version>${javax_servlet_jstl.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.tomcat</groupId>
+			<artifactId>tomcat-jsp-api</artifactId>
+			<version>${tomcat_jsp_api.version}</version>
+			<scope>provided</scope>
+		</dependency>
+		<!-- Jackson dependencies -->
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-databind</artifactId>
+			<version>${jackson.version}</version>
+		</dependency>
+		<!-- Log4j dependencies -->
+		<dependency>
+			<groupId>log4j</groupId>
+			<artifactId>log4j</artifactId>
+			<version>${log4j.version}</version>
+		</dependency>
+		<!-- Guava dependencies -->
+		<dependency>
+			<groupId>com.google.guava</groupId>
+			<artifactId>guava-gwt</artifactId>
+			<version>${guava.version}</version>
+		</dependency>
+		<!-- Reactive Rest dependencies -->
+		<dependency>
+			<groupId>lp.reactive</groupId>
+			<artifactId>ReactiveRest</artifactId>
+			<version>${reactiverest.version}</version>
+		</dependency>
+		<!-- H2 dependencies -->
+		<dependency>
+			<groupId>com.h2database</groupId>
+			<artifactId>h2</artifactId>
+			<version>${h2.version}</version>
+		</dependency>
+		<!-- Apache commons-lang dependencies -->
+		<dependency>
+			<groupId>commons-codec</groupId>
+			<artifactId>commons-codec</artifactId>
+			<version>${apache_commons.version}</version>
+		</dependency>
+	</dependencies>
+
+</project>
