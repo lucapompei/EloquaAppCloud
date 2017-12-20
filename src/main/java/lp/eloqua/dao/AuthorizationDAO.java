@@ -33,7 +33,7 @@ public class AuthorizationDAO {
 	/**
 	 * The date formatter
 	 */
-	private final SimpleDateFormat dateFormatter = new SimpleDateFormat("yyyy-MM-dd");
+	private final SimpleDateFormat dateFormatter = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss");
 
 	/**
 	 * The jdbc template
