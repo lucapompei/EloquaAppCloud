@@ -4,6 +4,7 @@ import java.text.SimpleDateFormat;
 
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
 
@@ -101,8 +102,8 @@ public class AuthorizationDAO {
 					+ "access_token_expiration_time as accessTokenExpirationTime, " + "company, "
 					+ "refresh_token as refreshToken, "
 					+ "refresh_token_expiration_time as refreshTokenExpirationTime, " + "install_id as installId "
-					+ "FROM " + APPCLOUD_AUTH_TABLE + "WHERE company='" + company + "'";
-			return jdbcTemplate.queryForObject(sql, AuthorizationModel.class);
+					+ "FROM " + APPCLOUD_AUTH_TABLE + " WHERE company='" + company + "'";
+			return jdbcTemplate.queryForObject(sql, new BeanPropertyRowMapper<>(AuthorizationModel.class));
 		} catch (Exception ex) {
 			LOGGER.error("Unable to retrieve authorization from db");
 			return null;
