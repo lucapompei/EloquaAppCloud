@@ -5,7 +5,7 @@
 	<groupId>lp.eloqua</groupId>
 	<artifactId>EloquaAppCloud</artifactId>
 	<packaging>war</packaging>
-	<version>1.0</version>
+	<version>1.1</version>
 	<name>Eloqua AppCloud</name>
 
 	<build>

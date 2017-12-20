@@ -97,7 +97,7 @@ public class AuthorizationDAO {
 	public AuthorizationModel getAuthorizationByCompany(String company) {
 		LOGGER.debug("Getting authorization from db");
 		try {
-			String sql = "SELECT id, " + "access_token as accessToken, "
+			String sql = "SELECT access_token as accessToken, "
 					+ "access_token_expiration_time as accessTokenExpirationTime, " + "company, "
 					+ "refresh_token as refreshToken, "
 					+ "refresh_token_expiration_time as refreshTokenExpirationTime, " + "install_id as installId "
