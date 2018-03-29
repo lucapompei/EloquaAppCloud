@@ -1,6 +1,6 @@
 # Eloqua App Cloud v.1.0
 
-[![Build Status](https://travis-ci.org/lucapompei/EloquaAppCloud.svg?branch=master)](https://travis-ci.org/lucapompei/EloquaAppCloud) [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+[![Build Status](https://travis-ci.org/lucapompei/EloquaAppCloud.svg?branch=master)](https://travis-ci.org/lucapompei/EloquaAppCloud) [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0) [![CodeFactor](https://www.codefactor.io/repository/github/lucapompei/eloquaappcloud/badge)](https://www.codefactor.io/repository/github/lucapompei/eloquaappcloud)
 
 =============================
 
@@ -27,7 +27,7 @@ Clone or download the maven project and start the customization.
 License
 -------
 
-  Copyright (C) 2017 lucapompei
+  Copyright (C) 2018 lucapompei
  
   Licensed under the Apache License, Version 2.0 (the "License");
   you may not use this file except in compliance with the License.
